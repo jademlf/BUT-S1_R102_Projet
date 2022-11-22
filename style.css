@@ -120,6 +120,109 @@ nav > ul li:hover .sous{
   margin: 50px 20px;
   height: 1500px;
 }
+/****************** PRESENTATION DU BUT *******************/
+.but{
+    text-align: center;
+}
+
+#regles {
+    max-width: 35%;
+}
+
+.tableau{
+    margin: 10px 0;
+    background-color: antiquewhite;
+}
+
+.texte {
+    margin: 0 30px;
+    text-align: justify;
+}
+
+#texte{
+    margin: 20px;
+    text-align: right;
+}
+
+.competence{
+    background-color: rgb(235,144,101);
+}
+
+.sem {
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    background-color: antiquewhite;
+
+}
+
+.flex{
+	display: flex;
+	flex-direction : row;
+	justify-content : flex-start;
+	align-items : center;
+}
+
+.titre{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    display: table;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+
+th[scope="row"] {
+    background-color: rgb(235,144,101);
+}
+
+
+th{
+    font-weight: initial;
+    padding: 8px;
+}
+
+.decorateur{
+    border-bottom: solid black;
+    margin-top: 20 px;
+}
+
+@media (max-width: 1000px){
+    .texte{
+		margin-left: 5px;
+		margin-right: 10px;
+    }
+    #texte{
+		margin:0 5px;
+	}
+	#regles h2{
+		text-align: right;
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width:800px){
+	.flex{
+		flex-flow: column;
+	}
+	.texte{
+		text-align: center;
+	}
+    #regles{
+		max-width:100%;
+		padding: 10px;
+	}
+}
 
 /************************* FOOTER *************************/
 
