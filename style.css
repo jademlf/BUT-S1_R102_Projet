@@ -1,7 +1,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	font-family: Times New Roman;
+	font-family: 'Times New Roman', times, serif;
 }
 
 /************************* HEADER *************************/
@@ -120,42 +120,9 @@ nav > ul li:hover .sous{
   margin: 50px 20px;
   height: 1500px;
 }
-/****************** PRESENTATION DU BUT *******************/
-.but{
-    text-align: center;
-}
 
-#regles {
-    max-width: 35%;
-}
-
-.tableau{
-    margin: 10px 0;
-    background-color: antiquewhite;
-}
-
-.texte {
-    margin: 0 30px;
-    text-align: justify;
-}
-
-#texte{
-    margin: 20px;
-    text-align: right;
-}
-
-.competence{
-    background-color: rgb(235,144,101);
-}
-
-.sem {
-    border: none;
-    font-size: large;
-    font-weight: bold;
-    background-color: antiquewhite;
-
-}
-
+/*************** GENERAL ***************/
+/* DEFINITION DES FLEXBOX */
 .flex{
 	display: flex;
 	flex-direction : row;
@@ -163,12 +130,126 @@ nav > ul li:hover .sous{
 	align-items : center;
 }
 
-.titre{
-    text-align: center;
+.flex img{
+	margin : 20px;
 }
 
-table, th, td {
-    border: 1px solid;
+/* PROPRIETE CORPS DE PAGE */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+}
+
+main a {
+    color: black;
+}
+
+main a:hover {
+    color: rgb(255,68,38);
+}
+
+main h1 {
+    text-align: left;
+    color: rgb(255,68,38);
+    margin-top: 5px;
+}
+
+article{
+	margin: 10px;
+    background-color: rgb(255,164,145);
+    margin: 20px auto;
+    border-radius: 20px;
+	padding: 20px;
+}
+
+article section{padding:20px;}
+
+/* TITRES */
+h2{
+	color: white;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+
+/* DECORATEUR ROUGE ENTRE ARTICLES */
+.decorateur{
+	border-bottom: solid red;
+}
+
+/* EFFET ZOOM */
+.imageSpeciale{transition: transform .1s;}
+.imageSpeciale:hover{
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* LISTE */
+ul div{margin-top: 10px;}
+
+/*************** ACCUEIL ***************/
+.pointille {
+    background-color: #f39a97;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.pointille ul, .pointille p{
+	margin : 20px;
+}
+
+.fondBlanc{
+	background-color: white;
+	border-top: solid red;
+	border-bottom: solid red;
+	border-radius: 0px;
+}
+
+.fondBlanc h2{
+	color: red;
+}
+
+.fondBlanc p, .fondBlanc ul{
+	color: grey;
+	margin-bottom: 20px;
+}
+
+.articleSection{
+	background-color: white;
+	border-radius: 0px;
+	padding: 0;
+}
+
+
+/********** Présentation BUT **********/
+.premierepartie {
+    padding: 10px 0;
+}
+
+.image{
+	margin : 20px;
+	margin-left: 30px;
+}
+
+.premierepartie a, .premierepartie p{
+	margin: 20px 0;
+}
+
+.premierepartie a {
+	width: 50%;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+.texte {
+    margin: 0 30px;
+    text-align: justify;
+}
+
+#paragrapheTableau{
+	margin: 20px;
+    text-align: right;
 }
 
 table {
@@ -176,52 +257,156 @@ table {
     border-collapse: collapse;
     display: table;
     margin: 10px;
-    font-size: 15px;
+    width: 100%;
     text-align: center;
     background-color: white;
 }
 
-
-th[scope="row"] {
-    background-color: rgb(235,144,101);
+tr td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    font-size: small;
+	
 }
 
-
 th{
+    border: none;
     font-weight: initial;
+    font-size: small;
+    background-color: grey;
+    color: white;
     padding: 8px;
 }
 
-.decorateur{
-    border-bottom: solid black;
-    margin-top: 20 px;
+.titre {
+    font-weight: bold;
+    border: none;
+    background-color: rgb(255,68,38);
+    font-size: medium;
 }
 
-@media (max-width: 1000px){
-    .texte{
-		margin-left: 5px;
-		margin-right: 10px;
-    }
-    #texte{
-		margin:0 5px;
-	}
-	#regles h2{
-		text-align: right;
-		margin-bottom: 15px;
-	}
+.deuxiemepartie {
+    margin-bottom: 20px;
 }
 
-@media (max-width:800px){
-	.flex{
-		flex-flow: column;
-	}
-	.texte{
-		text-align: center;
-	}
-    #regles{
-		max-width:100%;
-		padding: 10px;
-	}
+.deuxiemepartie img a{
+    width: 20%;
+    display: block;
+}
+
+.deuxiemepartie ul {
+    list-style-type: none;
+}
+
+.deuxiemepartie ul li{
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.tableauR {
+    width: 60%;
+    float: right;
+    margin: 100px 0;
+}
+
+.tableauR li {
+    height: 50px;
+    background-color: rgb(255,68,38);
+    margin: 5px;
+    padding-top: 25px;
+}
+
+.blocDroite, .blocGauche{
+	justify-content: center;
+}
+
+.blocDroite {
+	flex-direction: row-reverse;
+}
+
+.blocGauche img, .blocDroite img {
+    margin: 20px;
+}
+
+.blocDroite .tableauR, .blocGauche .tableauR {
+	margin : 10px;
+}
+
+.deuxiemepartie img {
+    box-shadow: 10px 5px 10px lightgray;
+}
+
+.deuxiemepartie li {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#regles {
+    max-width: 35%;
+}
+
+/*************** COMPETENCES ***************/
+.retour{
+	padding: 5px 10px;
+	background-color: grey;
+	color: white;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/***************** CONTACT *****************/
+
+.contact input{
+    display: flex;
+    margin: 0 20px;
+}
+
+.contact label {
+    display: flex;
+    margin: 0 10px;
+    max-width: 20%;
+}
+
+.contact textarea {
+    display: flex;
+    margin: 0 20px;
+    max-width: 100%;
+}
+.contact p{
+    display:table;
+}
+
+#form1{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+#send {
+    background-color: rgb(255,68,38);
+    color:white;
+    border: none;
+    height: 30px;
+    width: 200px;
+    margin: 10px 165px;
+}
+
+form div {
+    width:50%;
+}
+
+#carte {
+    justify-content: space-between;
+}
+
+#carte img{
+    margin: 20px 0;
 }
 
 /************************* FOOTER *************************/
