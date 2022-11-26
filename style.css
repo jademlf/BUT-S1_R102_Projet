@@ -198,8 +198,8 @@ h2{
 
 .separateur{
 	background-color: white;
-	border-top: solid red;
-	border-bottom: solid red;
+	border-top: solid black;
+	border-bottom: solid black;
 	border-radius: 0px;
 }
 
@@ -218,6 +218,13 @@ h2{
 	padding: 0;
 }
 
+.pic{
+	width : 30%;
+}
+
+.image{
+	width : 250px;
+}
 
 /********** Présentation BUT **********/
 
@@ -380,6 +387,9 @@ th{
 	#regles h2{
 		text-align: right;
 		margin-bottom: 15px;
+	}
+	.pic{
+	width : 60%;
 	}
 }
 
