@@ -34,9 +34,41 @@
 			</div>
 		</header>
 		
-		<main>	
+		<main class="contact">	
 			<div class="contenu">
+				<h1>Contact</h1>
 				
+				<!--FORMULAIRE DE CONTACT-->
+				<article>
+					<h2>Formulaire de Contact</h2>
+					<form method="post" class="flex">
+						<div id="formulaire">
+							<label for="prenom">Prénom :</label>
+							<input type="text" name="prenom" id="prenom" placeholder="Ex : Jeanne" size="30" maxlength="20"/>
+							<label for="nom">Nom :</label>
+							<input type="text" name="nom" id="nom" placeholder="Ex : Dark" size="30" maxlength="20"/>
+							<label for="adresseMail">Adresse mail :</label>
+							<input type="text" name="adresseMail" id="adresseMail" placeholder="Ex : blabla@mail.com" size="50" maxlength="40"/>
+							<input type="submit" id="send" value="Envoyer"/>
+						</div>
+						<div>
+							<label for="message">Message :</label>
+							<textarea name="message" id="message" rows="10" cols="50"></textarea>
+						</div>
+					</form>
+				</article>
+				
+				<!--INFORMATIONS/RENSEIGNEMENTS-->
+				<article id="carte" class= "butiut flex">
+					<div>
+						<img class="image" alt="photo IUT" src="img/photo_IUT.jpg">
+						<p>133 B Avenue de Rangueil, 31400 TOULOUSE</p>
+					</div>
+					
+					<div>
+						<iframe src="https://www.google.fr/maps/place/133b+Av.+de+Rangueil,+31400+Toulouse/@43.5700779,1.462506,17z/data=!3m1!4b1!4m5!3m4!1s0x12aebc3f8512b055:0x275b84d278e27c18!8m2!3d43.570074!4d1.4646947" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</article>
 			</div>
 		
 		</main>
