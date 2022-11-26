@@ -223,23 +223,18 @@ ul div{margin-top: 10px;}
 
 
 /********** Présentation BUT **********/
-.premierepartie {
-    padding: 10px 0;
+.but{
+    text-align: center;
 }
 
-.image{
-	margin : 20px;
-	margin-left: 30px;
+#regles {
+    max-width: 35%;
 }
 
-.premierepartie a, .premierepartie p{
-	margin: 20px 0;
-}
-
-.premierepartie a {
-	width: 50%;
-	text-decoration: none;
-	margin-right: 30px;
+.tableau{
+    margin: 10px 0;
+    background-color: bisque;
+    border-radius: 20px;
 }
 
 .texte {
@@ -247,9 +242,32 @@ ul div{margin-top: 10px;}
     text-align: justify;
 }
 
-#paragrapheTableau{
-	margin: 20px;
+#texte{
+    margin: 20px;
     text-align: right;
+}
+
+.sem {
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    background-color: bisque;
+
+}
+
+.flex{
+	display: flex;
+	flex-direction : row;
+	justify-content : flex-start;
+	align-items : center;
+}
+
+.titre{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid;
 }
 
 table {
@@ -257,48 +275,94 @@ table {
     border-collapse: collapse;
     display: table;
     margin: 10px;
-    width: 100%;
+    font-size: 15px;
     text-align: center;
     background-color: white;
 }
 
 tr td{
-    border: 1px solid gray;
+    border: 1px solid bisque;
     border-collapse: collapse;
     font-size: small;
 	
 }
 
+th[scope="row"] {
+    background-color: bisque;
+    border: 1px solid bisque;
+}
+
+
 th{
-    border: none;
     font-weight: initial;
-    font-size: small;
-    background-color: grey;
-    color: white;
     padding: 8px;
 }
 
-.titre {
-    font-weight: bold;
-    border: none;
-    background-color: rgb(255,68,38);
-    font-size: medium;
+.decorateur{
+    border-bottom: solid black;
+    margin: 20px 50px 20px 50px
 }
 
-.deuxiemepartie {
+.img{
+    width: 60%;
+}
+
+.img{transition: transform .1s;}
+.img:hover{
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.blocGauche .img, .blocDroit .img{
+    margin: 20px;
+}
+
+
+.blocDroit {
+	flex-direction: row-reverse;
+    object-position: right;
+    padding-bottom: 5px;
+}
+
+.pointille {
+    background-color: bisque;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.tableauC{
+    width: 60%;
+    float: right;
+    margin: 10px;
+}
+
+.tableauC li {
+    height: 50px;
+    background-color: rgb(255, 239, 219);
+    margin: 5px;
+    padding-top: 25px;
+    justify-content: center;
+}
+
+.competences {
     margin-bottom: 20px;
 }
 
-.deuxiemepartie img a{
+.competences img{
+    box-shadow: 10px 5px 10px antiquewhite;
+}
+
+.competences img a{
     width: 20%;
     display: block;
 }
 
-.deuxiemepartie ul {
+.competences ul {
     list-style-type: none;
 }
 
-.deuxiemepartie ul li{
+.competences ul li{
     display: block;
     float: left;
     width: 30%;
@@ -306,47 +370,40 @@ th{
     position: relative;
 }
 
-.tableauR {
-    width: 60%;
-    float: right;
-    margin: 100px 0;
+
+@media (max-width: 1000px){
+    .texte{
+		margin-left: 5px;
+		margin-right: 10px;
+    }
+    #texte{
+		margin:0 5px;
+	}
+	#regles h2{
+		text-align: right;
+		margin-bottom: 15px;
+	}
 }
 
-.tableauR li {
-    height: 50px;
-    background-color: rgb(255,68,38);
-    margin: 5px;
-    padding-top: 25px;
-}
+@media (max-width:800px){
+	.flex{
+		flex-flow: column;
+	}
+	.texte{
+		text-align: center;
+	}
+    #regles{
+		max-width:100%;
+		padding: 10px;
+	}
 
-.blocDroite, .blocGauche{
-	justify-content: center;
-}
+    .tableauR{
+		width: 90%;
+	}
 
-.blocDroite {
-	flex-direction: row-reverse;
-}
-
-.blocGauche img, .blocDroite img {
-    margin: 20px;
-}
-
-.blocDroite .tableauR, .blocGauche .tableauR {
-	margin : 10px;
-}
-
-.deuxiemepartie img {
-    box-shadow: 10px 5px 10px lightgray;
-}
-
-.deuxiemepartie li {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#regles {
-    max-width: 35%;
+    .blocGauche .img, .blocDroit .img{
+        margin-left: 100px;
+    }
 }
 
 /*************** COMPETENCES ***************/
