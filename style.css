@@ -117,12 +117,12 @@ nav > ul li:hover .sous{
 }
 
 .contenu{
-  margin: 50px 20px;
-  height: 1500px;
+  margin: auto;
+  height: 1200px;
 }
 
 /*************** GENERAL ***************/
-/* DEFINITION DES FLEXBOX */
+/* FLEXBOX */
 .flex{
 	display: flex;
 	flex-direction : row;
@@ -134,9 +134,9 @@ nav > ul li:hover .sous{
 	margin : 20px;
 }
 
-/* PROPRIETE CORPS DE PAGE */
+/* CORPS DE PAGE */
 main {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 5px;
     background-color: white;
@@ -147,24 +147,30 @@ main a {
 }
 
 main a:hover {
-    color: rgb(255,68,38);
+    color: rgb(243,154,151);
 }
 
 main h1 {
     text-align: left;
-    color: rgb(255,68,38);
+    color: rgb(219,48,53);
     margin-top: 5px;
 }
 
 article{
 	margin: 10px;
-    background-color: rgb(255,164,145);
+    background-color: rgb(235,144,101);
     margin: 20px auto;
     border-radius: 20px;
 	padding: 20px;
 }
 
-article section{padding:20px;}
+ul div{
+	margin-top: 10px
+}
+
+article section{
+	padding:20px;
+}
 
 /* TITRES */
 h2{
@@ -173,44 +179,35 @@ h2{
 	text-decoration: underline;
 }
 
-/* DECORATEUR ROUGE ENTRE ARTICLES */
+/* DECORATEUR ENTRE ARTICLES */
 .decorateur{
-	border-bottom: solid red;
+	border-bottom: solid black;
 }
 
-/* EFFET ZOOM */
-.imageSpeciale{transition: transform .1s;}
-.imageSpeciale:hover{
-	-ms-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
 
-/* LISTE */
-ul div{margin-top: 10px;}
 
 /*************** ACCUEIL ***************/
-.pointille {
+.box {
     background-color: #f39a97;
     margin: 20px auto;
     border-radius: 10px;
 }
-.pointille ul, .pointille p{
+.box ul, .box p{
 	margin : 20px;
 }
 
-.fondBlanc{
+.separateur{
 	background-color: white;
 	border-top: solid red;
 	border-bottom: solid red;
 	border-radius: 0px;
 }
 
-.fondBlanc h2{
+.separateur h2{
 	color: red;
 }
 
-.fondBlanc p, .fondBlanc ul{
+.separateur p, .separateur ul{
 	color: grey;
 	margin-bottom: 20px;
 }
@@ -223,6 +220,7 @@ ul div{margin-top: 10px;}
 
 
 /********** Présentation BUT **********/
+
 .but{
     text-align: center;
 }
@@ -233,7 +231,7 @@ ul div{margin-top: 10px;}
 
 .tableau{
     margin: 10px 0;
-    background-color: bisque;
+    background-color: #eb9065 ;
     border-radius: 20px;
 }
 
@@ -251,7 +249,7 @@ ul div{margin-top: 10px;}
     border: none;
     font-size: large;
     font-weight: bold;
-    background-color: bisque;
+    background-color: #9d9da2;
 
 }
 
@@ -326,7 +324,7 @@ th{
 }
 
 .pointille {
-    background-color: bisque;
+    background-color: #eb9065;
     margin: 20px auto;
     border-radius: 20px;
 }
@@ -345,7 +343,7 @@ th{
     justify-content: center;
 }
 
-.competences {
+.competences {	
     margin-bottom: 20px;
 }
 
@@ -405,7 +403,6 @@ th{
         margin-left: 100px;
     }
 }
-
 /*************** COMPETENCES ***************/
 .retour{
 	padding: 5px 10px;
@@ -417,6 +414,7 @@ th{
 }
 
 /***************** CONTACT *****************/
+
 .contact input{
     display: flex;
     margin: 0 20px;
@@ -464,6 +462,7 @@ form div {
 #carte img{
     margin: 20px 0;
 }
+
 
 
 /************************* FOOTER *************************/
